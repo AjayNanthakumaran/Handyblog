@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handy Blog</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #splashscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        background-color: black;
+        transition: opacity 2s ease-in-out;
+      }
+
+      #splashscreen.hidden {
+        opacity: 0;
+      }
+
+      #splashscreen img {
+        width: 1000px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="splashscreen">
+      <img src="img/Loading.gif" alt="Loading" />
+    </div>
+
+    <script>
+      function splashscreen() {
+        setTimeout(function () {
+          document.getElementById("splashscreen").classList.add("hidden");
+          setTimeout(function () {
+            window.location.href = "Startseite.html";
+          }, 2000); // Wait for the fade-out animation to finish before redirecting
+        }, 5200);
+      }
+      window.onload = splashscreen;
+    </script>
+  </body>
+</html>

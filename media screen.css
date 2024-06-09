@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1029px) {
+  .logo a{
+    display: none;
+  }
+  h1 {
+    margin-left: 10px;
+  }
+  .sidebar h3 {
+    display: none;
+  }
+  .search {
+    margin-left: -180px !important;
+  }
+  #handy {
+    width: 85%;
+    margin-left: -10%;
+  }
+  .dropdown-language {
+    margin-left: 8px;
+  }
+  #images {
+    margin-left: -35%;
+
+  }
+  #pixel{
+    margin-left: 50px;
+  }
+  #imgtextgooglepixel{
+    margin-left: 40px;
+  }
+  #ausprobiert {
+    margin-left: -25% !important;
+  }
+  #text {
+    margin-left: 170px !important;
+  }
+  .text{
+    margin-left: -110px !important;
+  }
+  .label {
+    margin-left: -20%;
+  }
+  #checkbox-btn {
+    margin-left: -30% !important;
+  }
+  #beliebte-posts {
+    margin-left: -30% !important;
+    margin-top: 320px !important;
+  }
+  #Elekroautos {
+    display: none;
+  }
+  #Tierwelt {
+    display: none;
+  }
+  #Internet {
+    display: none;
+  }
+
+  #elektro,
+  #star,
+  #thumb-up1,
+  #thumb-down1,
+  #thumb-up-elektro,
+  #thumb-down-elektro,
+  #starelektro {
+    display: none;
+  }
+
+  #inter,
+  #thumb-upinter,
+  #thumb-downinter,
+  #starinter {
+    display: none;
+  }
+  #inter,
+  #thumb-upinter,
+  #thumb-downinter,
+  #starinter,
+  #tier,
+  #star1 {
+    display: none;
+  }
+  #comments-section {
+    margin-top: 70px;
+    width: 40vh;
+    margin-left: -20%;
+  }
+  footer {
+    margin-top: 200px;
+    margin-right: -20px;
+  }
+  #handyPopup {
+    height: 500px;
+    width: 500px;
+  }
+  #handyPopupIMG {
+    margin-left: 50px;
+  }
+  #handyPopup button {
+    margin-left: 200px;
+  }
+  /* Zweite Seite */
+  #Bewertung {
+    margin-left: -250px !important;
+  }
+  #Center {
+    margin-left: -100px !important;
+  }
+  #Center .img {
+    margin-top: 50px !important;
+  }
+  #Center video {
+    margin-top: 50px !important;
+  }
+  #Überschrift {
+    margin-top: 200px;
+  }
+  /* Dritte Seite */
+  #VorUndNachteile{
+    margin-left: -90px !important;
+  }
+  #img2{
+    margin-top: 50px !important;
+    margin-right: 50px !important;
+  }
+  #text2{
+    margin-left: 40px !important;
+  }
+}
+@media only screen and (max-width: 1476px) {
+  #Tierwelt{
+    display: none;
+  }
+  #tier,
+  #thumb-up1,
+  #thumb-down1,
+  #star1{
+    display: none;
+  }
+  #comments-section{
+    width: 35vh;
+  }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuer Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media print.css">
+    <link rel="stylesheet" href="media screen.css">
+    <link rel="stylesheet" href="Bewertung.css">
+</head>
+<script>
+//SPRACHE ÄNDERN
+
+function showSubmitPopup() {
+  document.getElementById('handyPopup').style.display = 'block';
+  document.getElementById('handyPopup-background').style.display = 'block';
+}
+function dontshowPopup() {
+  document.getElementById('handyPopup').style.display = 'none';
+  document.getElementById('handyPopup-background').style.display = 'none';
+}
+function fcookie(){
+  document.getElementById("cookiepopup").style.display = 'none'
+  document.getElementById('cookie-background').style.display = 'none';
+}
+
+function thumbsup(){
+    document.getElementById("thumb-up").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-down").style.color = 'White';
+}
+function thumbsdown(){
+    document.getElementById("thumb-down").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-up").style.color = 'White';
+}
+function fstar(){
+    document.getElementById("star").style.color = 'yellow';
+}
+function thumbsupelektro(){
+    document.getElementById("thumb-up-elektro").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-down-elektro").style.color = 'White';
+}
+function thumbsdownelektro(){
+    document.getElementById("thumb-down-elektro").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-up-elektro").style.color = 'White';
+
+}
+function fstarelektro(){
+    document.getElementById("starelektro").style.color = 'yellow';
+}
+
+function thumbsup1(){
+    document.getElementById("thumb-up1").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-down1").style.color = 'White';
+}
+function thumbsdown1(){
+    document.getElementById("thumb-down1").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-up1").style.color = 'White';
+
+}
+function fstar1(){
+    document.getElementById("star1").style.color = 'yellow';
+}
+
+function thumbsupinter(){
+    document.getElementById("thumb-upinter").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-downinter").style.color = 'White';
+}
+function thumbsdowninter(){
+    document.getElementById("thumb-downinter").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-upinter").style.color = 'White';
+
+}
+function fstarinter(){
+    document.getElementById("starinter").style.color = 'yellow';
+}
+//Kommentare
+function submitComment() {
+    var name = document.getElementById('comment-name').value;
+    var text = document.getElementById('comment-text').value;
+    var commentsList = document.getElementById('comments-list');
+
+    if (name && text) {
+        var comment = document.createElement('div');
+        comment.className = 'comment';
+
+        var now = new Date();
+        var datetime = now.toLocaleString('de-DE', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        });
+
+        var commentDetails = document.createElement('div');
+        commentDetails.className = 'comment-details';
+        commentDetails.textContent = name + ' am ' + datetime;
+
+        var commentText = document.createElement('div');
+        commentText.textContent = text;
+
+        comment.appendChild(commentDetails);
+        comment.appendChild(commentText);
+
+        commentsList.appendChild(comment);
+
+        // Clear the form fields
+        document.getElementById('comment-name').value = '';
+        document.getElementById('comment-text').value = '';
+    } else {
+        alert('Bitte geben Sie Ihren Namen und einen Kommentar ein.');
+    }
+}
+
+
+</script>
+
+
+<body>
+    <div class="left-section">
+        <div class="logo">
+          <img onclick="location.href='Startseite.html'" src="img/Logo.png"></a> 
+            <a href="Startseite.html">Mein blog</a>
+        </div>
+
+        <div class="sidebar">
+            <div class="item">
+                <i class="ri-home-4-line" onclick="location.href='Startseite.html';"></i>
+                <h3 onclick="location.href='Startseite.html';">Home</h3>
+            </div>
+           
+            <div class="item active">
+                <i class="ri-smartphone-line" onclick="location.href='Bewertung.html';"></i>
+                <h3 onclick="location.href='Bewertung.html';">Bewertung</h3>
+            </div>
+        </div>
+
+        <div class="sign-out">     
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <div class="search">
+                <button><i class="ri-search-2-line"></i></button>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+        <br>
+        <div id="Bewertung">
+            <h1>Bewertung</h1>
+        </div>
+        <div id="Container">   
+            <div id="Center">
+                <h2>Kamara</h2>
+                <div class="text">
+                    <div id="text">
+                        Die Kamera des S24 überzeugt mit einer eindrucksvollen Mischung aus hochauflösenden Bildern, 
+                        <br> 
+                        fortschrittlichen Funktionen und einer benutzerfreundlichen Schnittstelle. Dadurch können Benutzer  <br>
+                        in verschiedenen Situationen qualitativ hochwertige Aufnahmen machen. Ihre stabile Bauweise  <br>
+                        und Zuverlässigkeit machen sie sowohl für professionelle Fotografen als auch für Amateure zur ersten Wahl.
+                    </div>    
+                        <a href=""><img onclick="falert();" class="img" src="img/S24 Ultra Kamara.jpg" alt=""></a>
+                </div>    
+                <br>
+                <br>
+                <br>
+                <div id="Überschrift">
+                    <h2>Display</h2>
+                </div>
+                <div class="text">
+                    <div id="text">
+                        Das Display des Google Pixel 8 überzeugt durch seine innovative OLED-Technologie, <br> 
+                        die tiefe Schwarzwerte, lebendige Farben und hohe Helligkeit liefert, <br>
+                        was zu einer herausragenden Bildqualität führt. Zusätzlich bietet es eine hohe Bildwiederholrate <br>
+                        für flüssige Animationen und reaktionsschnelle Touch-Bedienung, was eine erstklassige Benutzererfahrung gewährleistet. <br>
+                    </div>    
+                        <a href=""><img  onclick="falert();" class="img" src="img/Google pixel gif.gif"></a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="Überschrift">
+                  <h2>Design</h2>
+                </div>  
+                <div class="text">
+                    <div id="text">
+                        Das Design des S24 vereint Ästhetik und Funktionalität in einer schlanken und eleganten Form, <br>  
+                        die sich angenehm in der Hand anfühlt und gleichzeitig eine robuste Bauweise bietet, <br>
+                        die den täglichen Anforderungen standhält. Mit einer harmonischen Integration <br>
+                        von Materialien und feinen Details strahlt das Design des S24 <br>
+                        eine zeitlose Eleganz aus, die sowohl ansprechend als auch ergonomisch ist.
+                    </div>
+                        <a href=""><img  onclick="falert();" class="img" src="img/S24-Ultra design.jpg"></a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="Überschrift">
+                    <h2>Software</h2>
+                </div>
+                <div class="text">
+                    <div id="text">
+                        Die Software des iPhone 15 bietet eine nahtlose Integration von <br> 
+                        Hardware und Betriebssystem, was zu einer reibungslosen und <br>
+                        intuitiven Benutzererfahrung führt. Ihre fortschrittlichen <br>
+                        Funktionen, gepaart mit einem hohen Maß an Sicherheit und Datenschutz, <br>
+                        setzen einen neuen Standard für mobile Betriebssysteme.
+                    </div>
+                  <a href=""><Video src="img/iPhone15 Software.mp4" autoplay loop muted></Video></a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="Überschrift">
+                    <h2>Akku</h2>
+                </div>
+                <div class="text">
+                    <div id="text">
+                        Das Akku des S24 zeichnet sich durch seine außergewöhnliche Langlebigkeit und Leistungsfähigkeit aus, <br>     
+                        was es zu einem verlässlichen Begleiter für intensive Nutzung macht. <br>
+                        Mit innovativen Technologien und effizientem Energiemanagement bietet es eine beeindruckende Batterielaufzeit, <br>
+                        die den Anforderungen eines anspruchsvollen Alltags gerecht wird.
+                    </div>
+                    <a href=""><img onclick="falert()" class="img" src="img/S24 gif.gif"></a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="Überschrift">
+                    <h2>Sicherheit</h2>
+                </div>
+                <div class="text">
+                    <div id="text">
+                        Die Sicherheit des S24 setzt Maßstäbe durch eine robuste Kombination aus Hardware- <br>
+                        und Softwarefunktionen, die Benutzerdaten schützen und Bedrohungen abwehren. <br>
+                        Mit kontinuierlichen Updates und einem starken Fokus auf Datenschutz <br>
+                        bietet das S24 ein Höchstmaß an Sicherheit für seine Nutzer.
+                    </div>
+                    <a href=""><img  onclick="falert();" class="img" src="img/Galaxy-S24-Ultra sicherheit.jpg"></a>              
+                </div>
+            </div>
+            <br>
+            <div id="beliebte-posts">
+                <h3>Beliebte Posts</h3>
+                <img onclick="location.href='pc oder konsole.html';" id="Reiseziele" src="img/pc-oder-konsole.jpg" alt="">
+                <img id="Elekroautos" src="img/Elekroautos.jpg" alt="">
+                <img id="Tierwelt" src="img/Künstliche Inteligenz.jpg" alt="">
+                <br>
+                <br>
+                <div id="Reise">
+                    <a href="pc oder konsole.html">Pc oder Konsole ?</a>
+                    <i onclick="thumbsup();" id="thumb-up" class="ri-thumb-up-fill"></i>
+                    <i onclick="thumbsdown();" id="thumb-down" class="ri-thumb-down-fill"></i>
+                    <i onclick="fstar();" id="star" class="ri-star-fill"></i>
+
+                    <a id="elektro" href="#">Elektroautos</a>
+                    <i onclick="thumbsupelektro();" id="thumb-up-elektro" class="ri-thumb-up-fill"></i>
+                    <i onclick="thumbsdownelektro();" id="thumb-down-elektro" class="ri-thumb-down-fill"></i>
+                    <i onclick="fstarelektro();" id="starelektro" class="ri-star-fill"></i>
+
+                    <a id="tier" href="#">Künstliche Intelligenz </a>
+                    <i onclick="thumbsup1();" id="thumb-up1" class="ri-thumb-up-fill"></i>
+                    <i onclick="thumbsdown1();" id="thumb-down1" class="ri-thumb-down-fill"></i>
+                    <i onclick="fstar1();" id="star1" class="ri-star-fill"></i>
+                    <p></p>
+                </div>
+            </div>    
+        </div>
+        <br>
+        <div id="handyPopup-background"></div>
+        <div id="handyPopup">
+            <img id="handyPopupIMG" src="img/Logo1.png">
+            <p>Danke für deine Einsendung</p>
+            <Button onclick="dontshowPopup();">Zurück zur Startseite</Button>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JavaScript und jQuery (Voraussetzung für einige Bootstrap-Funktionen) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

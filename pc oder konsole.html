@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuer Blog</title>
+    <link rel="stylesheet" href="pc oder konsole.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media print.css">
+    <link rel="stylesheet" href="media screen.css">
+</head>
+<script>
+function showSubmitPopup() {
+  document.getElementById('handyPopup').style.display = 'block';
+  document.getElementById('handyPopup-background').style.display = 'block';
+}
+function dontshowPopup() {
+  document.getElementById('handyPopup').style.display = 'none';
+  document.getElementById('handyPopup-background').style.display = 'none';
+}
+function fcookie(){
+  document.getElementById("cookiepopup").style.display = 'none'
+  document.getElementById('cookie-background').style.display = 'none';
+}
+
+function thumbsup(){
+    document.getElementById("thumb-up").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-down").style.color = 'White';
+}
+function thumbsdown(){
+    document.getElementById("thumb-down").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-up").style.color = 'White';
+}
+function fstar(){
+    document.getElementById("star").style.color = 'yellow';
+}
+function thumbsupelektro(){
+    document.getElementById("thumb-up-elektro").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-down-elektro").style.color = 'White';
+}
+function thumbsdownelektro(){
+    document.getElementById("thumb-down-elektro").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-up-elektro").style.color = 'White';
+
+}
+function fstarelektro(){
+    document.getElementById("starelektro").style.color = 'yellow';
+}
+
+function thumbsup1(){
+    document.getElementById("thumb-up1").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-down1").style.color = 'White';
+}
+function thumbsdown1(){
+    document.getElementById("thumb-down1").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-up1").style.color = 'White';
+
+}
+function fstar1(){
+    document.getElementById("star1").style.color = 'yellow';
+}
+
+function thumbsupinter(){
+    document.getElementById("thumb-upinter").style.color = 'rgb(40, 40, 184)';      
+    document.getElementById("thumb-downinter").style.color = 'White';
+}
+function thumbsdowninter(){
+    document.getElementById("thumb-downinter").style.color = 'rgb(40, 40, 184)';
+    document.getElementById("thumb-upinter").style.color = 'White';
+
+}
+function fstarinter(){
+    document.getElementById("starinter").style.color = 'yellow';
+}
+
+function subscribeNewsletter() {
+    const email = document.getElementById('newsletter-email').value;
+    if (email.trim() === '') return;
+
+    alert(`Danke für dein Abonnement, ${email}!`);
+    document.getElementById('newsletter-email').value = '';
+}
+
+
+</script>
+
+
+<body>
+    <div class="left-section">
+        <div class="logo">
+          <a href="index.html"><img src="img/Logo.png"></a> 
+            <a href="#">Mein blog</a>
+        </div>
+
+        <div class="sidebar">
+            <div class="item">
+                <i class="ri-home-4-line" onclick="location.href='index.html';" ></i>
+                <h3 onclick="location.href='index.html';">Home</h3>
+            </div>
+           
+            <div class="item active">
+                <i class="ri-computer-line" onclick="location.href='pc oder konsole.html';"></i>
+                <h3 onclick="location.href='pc oder konsole.html';">Konsole oder PC?</h3>      
+            </div>
+        </div>
+
+        <div class="sign-out">     
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <div class="search">
+                <button><i class="ri-search-2-line"></i></button>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+        <br>
+        <h1>Konsole oder Pc? </h1>
+        <div id="Container">   
+            <img id="handy" src="img/pc-oder-konsole.jpg" alt="">
+            
+            <div id="VorUndNachteile">
+                <h2>Vor- und Nachteile von PCs und PS5</h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>PCs</th>
+                        <th>PS5</th>
+                    </tr>
+                    <tr>
+                        <td>Preis</td>
+                        <td>Häufig teurer</td>
+                        <td>Preiswerter</td>
+                    </tr>
+                    <tr>
+                        <td>Leistung</td>
+                        <td>Variable, abhängig von Hardware</td>
+                        <td>Konsistente Leistung</td>
+                    </tr>
+                    <tr>
+                        <td>Upgrade-Möglichkeiten</td>
+                        <td>Leicht zu aktualisieren</td>
+                        <td>Beschränkte Upgrade-Optionen</td>
+                    </tr>
+                    <tr>
+                        <td>Exklusive Spiele</td>
+                        <td>Keine</td>
+                        <td>Einige, aber begrenzt</td>
+                    </tr>
+                    <tr>
+                        <td>Vielseitigkeit</td>
+                        <td>Arbeiten, Gaming, Kreativität</td>
+                        <td>Hauptsächlich Gaming</td>
+                    </tr>
+                </table>
+                <h3>Empfehlung:</h3>
+                <div class="text">
+                    <div id="text2">
+                    <p>Wenn du vielseitige Möglichkeiten für Arbeit, Gaming und Kreativität suchst, <br>
+                        ist ein PC möglicherweise die beste Wahl. Wenn Gaming deine Hauptpriorität ist und <br>
+                        du ein begrenztes Budget hast, könnte die PS5 die bessere Option sein.</p>
+                    </div>    
+                    <a href=""><img id="img2"  onclick="falert();" class="img" src="img/pc und konsole.jpg"></a>
+                </div>
+            </div>
+            <div id="beliebte-posts">
+                <h3>Beliebte Posts</h3>
+                <img onclick="location.href='index.html';" id="Reiseziele" src="img/Handys.jpg" alt="">
+                <img id="Elekroautos" src="img/Elekroautos.jpg" alt="">
+                <img id="Tierwelt" src="img/Künstliche Inteligenz.jpg" alt="">
+                <br>
+                <br>
+                <div id="Reise">
+                    <a href="#">Was ist dein lieblings Handy?</a>
+                    <i onclick="thumbsup();" id="thumb-up" class="ri-thumb-up-fill"></i>
+                    <i onclick="thumbsdown();" id="thumb-down" class="ri-thumb-down-fill"></i>
+                    <i onclick="fstar();" id="star" class="ri-star-fill"></i>
+
+                    <a id="elektro" href="#">Elektroautos</a>
+                    <i onclick="thumbsupelektro();" id="thumb-up-elektro" class="ri-thumb-up-fill"></i>
+                    <i onclick="thumbsdownelektro();" id="thumb-down-elektro" class="ri-thumb-down-fill"></i>
+                    <i onclick="fstarelektro();" id="starelektro" class="ri-star-fill"></i>
+
+                    <a id="tier" href="#">Künstliche Intelligenz </a>
+                    <i onclick="thumbsup1();" id="thumb-up1" class="ri-thumb-up-fill"></i>
+                    <i onclick="thumbsdown1();" id="thumb-down1" class="ri-thumb-down-fill"></i>
+                    <i onclick="fstar1();" id="star1" class="ri-star-fill"></i>
+                </div>
+            </div>    
+        </div>
+        <br>
+        <footer class="bg-dark text-white text-center py-3">
+            <a class="Icons-yt" href="https://www.youtube.com/"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+               <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+               <i class="bi bi-youtube"> Youtube</i>
+             </svg></a>
+             <a class="Icons-twitter" href="https://twitter.com/Vegitoblue85"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+               <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+               <i class="bi bi-twitter"> Twitter</i>
+             </svg></a>
+             <a class="Icons-twitch" href="https://www.twitch.tv/domtendo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+               <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142z"/>
+               <path d="M11.857 3.143h-1.143V6.57h1.143zm-3.143 0H7.571V6.57h1.143z"/>
+              <i class="bi bi-twitch"> Twitch</i>
+             </svg></a>
+             <a class="Icons-discord" href="https://discord.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+               <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+               <i class="bi bi-discord"> Discord</i>
+             </svg></a>
+             <br>
+             <br>
+             <a target="_blank" class="Impressum" href= "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Impressum</a>
+             <a target="_blank" class="Impressum" href= "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Nutzungsbedingungen</a>
+             <a target="_blank" class="Impressum" href= "mailto:ajaynanthakumaran33@gmail.com">Über mich</a>
+             <br>
+             <div id="newsletter-section">
+                <h2>Melde dich für unseren Newsletter an</h2>
+                <input type="email" id="newsletter-email" placeholder="Deine E-Mail-Adresse">
+                <button onclick="subscribeNewsletter()">Abonnieren</button>
+            </div>
+             <p>© 2024 Mein Blog. Alle Rechte vorbehalten.</p>
+        </footer>
+        <div id="handyPopup-background"></div>
+        <div id="handyPopup">
+            <img id="handyPopupIMG" src="img/Logo1.png">
+            <p>Danke für deine Einsendung</p>
+            <Button onclick="dontshowPopup();">Zurück zur Startseite</Button>
+        </div>
+    
+    
+    </div>
+    
+
+
+
+
+<!-- Bootstrap JavaScript und jQuery (Voraussetzung für einige Bootstrap-Funktionen) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

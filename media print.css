@@ -1,0 +1,32 @@
+@media print {
+  body {
+    filter: grayscale(100%);
+  }
+  #Container img {
+    display: none;
+  }
+  #label {
+    display: none;
+  }
+  #beliebte-posts {
+    display: none;
+  }
+  #comments-section {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  #handyPopup-background {
+    display: none;
+  }
+  #handyPopup {
+    display: none;
+  }
+  #cookiePopup {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+}
